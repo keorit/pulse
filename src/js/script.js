@@ -3,7 +3,17 @@ $(document).ready(function () {
         infinite: true,
         speed: 1300,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/row-left.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/row-right.png"></button>'
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/row-right.png"></button>',
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                    infinite: true,
+                    dots: true
+                }
+            }
+
+        ]
 
     });
 

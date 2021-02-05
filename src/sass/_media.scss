@@ -41,6 +41,42 @@
   .feed-form {
     margin: 36px auto 0 auto;
   }
+
+  .carousel {
+    &__inner {
+      width: 740px;
+    }
+  }
+
+  .slick-slide {
+    img {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  .slick-dots li button:before {
+    font-size: 50px;
+  }
+
+  .catalog__content {
+    justify-content: space-evenly;
+  }
+
+  .review {
+    &__item {
+      justify-content: space-evenly;
+    }
+    &__img {
+      width: 140px;
+      height: 140px;
+      margin-left: 40px;
+    }
+    &__text {
+      margin-left: 40px;
+      padding-right: 40px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -96,6 +132,29 @@
       font-size: 16px;
     }
   }
+
+  .carousel {
+    &__inner {
+      width: 550px;
+    }
+  }
+
+  .slick-dots li button:before {
+    font-size: 40px;
+  }
+
+  .catalog {
+    &__tab {
+      width: 150px;
+      font-size: 15px;
+    }
+  }
+
+  .footer__info {
+    width: 400px;
+    height: 240px;
+    padding: 30px 35px 40px 35px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -133,13 +192,79 @@
   }
 
   .title {
-    &_left {
-      font-size: 20px;
-      line-height: 30px;
-    }
+    font-size: 20px;
   }
 
   .feed-form {
     width: 290px;
+  }
+  .carousel {
+    &__inner {
+      width: 300px;
+    }
+  }
+
+  .slick-slide {
+    img {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  .slick-dots li button:before {
+    font-size: 25px;
+  }
+
+  .catalog {
+    &__tabs {
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    &__tab {
+      margin: 5px 5px;
+    }
+  }
+
+  .review {
+    &__item {
+      display: block;
+      margin-top: 30px;
+      padding: 0 10px;
+      &:nth-child(2) {
+        margin-top: 30px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &__text {
+      margin: 15px auto 0 auto;
+      padding: 0;
+      text-align: center;
+    }
+    &__descr {
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
+
+  .footer {
+    &__info {
+      width: 250px;
+      height: 180px;
+      padding: 30px 10px 30px 10px;
+    }
+    &__addr,
+    &__phone {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+    &__social-item {
+      width: 45px;
+      height: 45px;
+      margin: 0 10px;
+    }
   }
 }
