@@ -77,6 +77,22 @@
       padding-right: 40px;
     }
   }
+
+  .feed-form_mt25 {
+    width: 100%;
+  }
+
+  .modal {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__descr {
+      font-size: 14px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -196,8 +212,9 @@
   }
 
   .feed-form {
-    width: 290px;
+    width: 100%;
   }
+
   .carousel {
     &__inner {
       width: 300px;
@@ -266,5 +283,9 @@
       height: 45px;
       margin: 0 10px;
     }
+  }
+
+  .modal {
+    width: 210px;
   }
 }
