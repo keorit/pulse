@@ -8,13 +8,10 @@
 		margin-top: 65px;
 	}
 	&__item {
-		width: 250px;
-		text-align: center;
-	}
-	&__icon {
-		width: 70px;
-		display: block;
-		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		max-width: 238px;
+		align-items: center;
 	}
 	&__subtitle {
 		font-size: 18px;
@@ -25,11 +22,20 @@
 		font-size: 14px;
 		font-weight: 300;
 		margin-top: 26px;
+		text-align: center;
 		a {
 			color: #ff0000;
 			text-decoration: underline;
 			&:hover {
 				text-decoration: none;
+			}
+		}
+	}
+	&__icon {
+		&_animated {
+			animation: heartbeat 2.5s ease infinite;
+			&:hover {
+				animation-play-state: paused;
 			}
 		}
 	}
